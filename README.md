@@ -1,5 +1,5 @@
 # Welcome to ESPBA!
-####ESPBA === `E`xtremely `S`imple `P`HP `B`ackend for `A`ngular.
+#### ESPBA === `E`xtremely `S`imple `P`HP `B`ackend for `A`ngular.
 
 *A few hundred lines port into your legacy data.*
 
@@ -28,12 +28,12 @@ Supporting complex queries is not the aim for ESPBA. If that is an issue I recom
 * MySQL /  MariaDB in any version, it should work on Oracle, FireBase and MSSQL as well, any database that honours the [SQL-92](http:///en.wikipedia.org/wiki/SQL-92) standard.
 * Angular 1.x 
 ---
-###Installation
+### Installation
 
 `bower install ESPBA` or download this repository.
 
 ---
-###The important files 
+### The important files 
 ```
 root
 └───server
@@ -46,17 +46,17 @@ root
 ```
 Copy the `/server` files to your preferred destination. I like to place them in an `app/api` directory, since this is all about Single Page Apps with no server-software anyway.  Update credentials in the `pw.php` file.  The reason for separating credentials is the ability to separate sensitive info from a git repository, such as github, by adding an `app/api/pw.php` to the `.gitignore` instruction. 
 
-###Angular ESPBA service
+### Angular ESPBA service
 
 
 
-####`.setHost(host)`
+#### `.setHost(host)`
 Sets the API host. ESPBA exposes `Access-Control-Allow-Origin	: *`, so if needed you can have your data hosted on a remote server, different from the `http` or `https` server hosting your website..
 
-####`.setApiPath(apiPath)`
+#### `.setApiPath(apiPath)`
 The relative path to the ESPBA PHP scripts from `host`.
 
-####`.setReturnMode(mode)`
+#### `.setReturnMode(mode)`
 Defines the overall return mode. Acceptable values is `'response'` and `'json'`. if `returnMode` is set to` 'response'`, which is the default, you receive the entire http response from ESPBA. Records (or error messages) can be retrieved through `response.data`.  If `returnMode` is set to` 'json'`, you receive the `data` object only, that can be used right away as in ` $scope.animals = data`.
 
 The example snippets assume you have table named animals
@@ -67,7 +67,7 @@ id  | int | 27
 type  | varchar | mammals
 name | varchar | Tiger
 
-####`.get(table, data, selectParams)`
+#### `.get(table, data, selectParams)`
 Retrieves records from a table.  SELECT criterias  is defined by `data`, additional params defined by `selectParams`. 
 
     //get all animals        
@@ -101,4 +101,3 @@ Retrieves records from a table.  SELECT criterias  is defined by `data`, additio
     })
   
   
-Update and delete,,, you get the pictuure :)
