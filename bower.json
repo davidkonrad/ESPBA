@@ -1,0 +1,23 @@
+{
+  "name": "ESPBA",
+  "description": "Extremely Simple PHP Backend for Angular",
+  "homepage": "https://github.com/davidkonrad/ESPBA",
+  "version": "0.0.1",
+	"keywords": [
+    "angular",
+    "PHP"
+  ],
+	"author": {
+    "name": "David Konrad",
+    "email": "davidkonrad@gmail.com",
+    "url": "https://github.com/davidkonrad"
+  },
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
